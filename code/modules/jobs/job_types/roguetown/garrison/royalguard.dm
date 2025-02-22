@@ -62,18 +62,15 @@
 	backr = /obj/item/storage/backpack/rogue/satchel
 	backl = /obj/item/rogueweapon/shield/tower/metal
 	r_hand = /obj/item/rogueweapon/polearm/halberd
-	if(prob(30))
-		head = /obj/item/clothing/head/roguetown/helmet/visored/knight
-	else
-		head = /obj/item/clothing/head/roguetown/helmet/sallet
+	head = /obj/item/clothing/head/roguetown/helmet/visored/knight
 
 	if(H.mind)
 		H.mind?.adjust_skillrank(/datum/skill/combat/bows, 3, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
+		H.mind?.adjust_skillrank(/datum/skill/combat/wrestling, 5, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/combat/unarmed, 4, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)
+		H.mind?.adjust_skillrank(/datum/skill/combat/swords, 5, TRUE)
+		H.mind?.adjust_skillrank(/datum/skill/combat/polearms, 5, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/combat/axesmaces, 2, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/combat/shields, 4, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
