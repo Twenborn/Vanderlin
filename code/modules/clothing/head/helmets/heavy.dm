@@ -4,7 +4,7 @@
 	flags_inv = HIDEEARS|HIDEFACE
 	equip_sound = 'sound/foley/equip/equip_armor_plate.ogg'
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
-	block2add = FOV_RIGHT|FOV_LEFT
+	block2add = FOV_BEHIND
 	equip_delay_self = 3 SECONDS
 	unequip_delay_self = 3 SECONDS
 	emote_environment = 3		// Unknown if this actually works and what it does
@@ -77,13 +77,14 @@
 
 
 //............... Frog Helmet ............... //
-/obj/item/clothing/head/helmet/heavy/frog
+/obj/item/clothing/head/helmet/heavy/necked/frog
 	name = "frog helmet"
 	desc = "A thick, heavy helmet that severely obscures the wearer's vision. Still rather protective."
 	icon_state = "froghelm"
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/64x64/head.dmi'
 	worn_x_dimension = 64
 	worn_y_dimension = 64
+	block2add = FOV_RIGHT|FOV_LEFT
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 
 	armor = ARMOR_PLATE_GOOD
